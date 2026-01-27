@@ -155,6 +155,7 @@ header .inner h1 {
  background: url(../img/sec-3-bg.png) no-repeat center/cover;
  height: 100%;
 }
+
 .sec-4 {
  padding: 200px 0;
 }
@@ -187,6 +188,39 @@ header .inner h1 {
 }
 .sec-4-lst li:nth-child(even) a {
  margin-top: 60px;
+}
+.sec-5-content-wrap{
+ height: 650px;
+ position: relative;
+ z-index: 0;
+}
+.sec-5-content-wrap .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-position: ;
+    background-size: ;
+    background-repeat: ; */
+}
+.sec-5-content-wrap .con-0{
+    /* background-image: ; */
+    background-color: #7044c2;
+}
+.sec-5-content-wrap .con-1{
+    background-color: #a0c244;
+}
+.sec-5-content-wrap .con-2{
+    background-color: #c24489;
+}
+.sec-5-content-wrap .con-3{
+    background-color: #c25d44;
+}
+.sec-5-menu{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 footer {
  background-color: #f1f1f1;
