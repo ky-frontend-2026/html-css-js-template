@@ -155,7 +155,7 @@ header .inner h1 {
  background: url(../img/sec-3-bg.png) no-repeat center/cover;
  height: 100%;
 }
-
+/* 4 */
 .sec-4 {
  padding: 200px 0;
 }
@@ -189,39 +189,94 @@ header .inner h1 {
 .sec-4-lst li:nth-child(even) a {
  margin-top: 60px;
 }
-.sec-5-content-wrap{
+.sec-5 {
  height: 650px;
+}
+#sec4 h2.tit {
+ font-size: 60px;
+}
+.sec-5-content-wrap {
  position: relative;
+ height: 100%;
  z-index: 0;
 }
-.sec-5-content-wrap .content{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* background-position: ;
-    background-size: ;
-    background-repeat: ; */
+.sec-5 a.btn {
+ width: auto;
+ padding: 0 20px;
 }
-.sec-5-content-wrap .con-0{
-    /* background-image: ; */
-    background-color: #7044c2;
+.sec-5-content-wrap .content {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.37);
+ z-index: 0;
+ opacity: 0;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ color: #fff;
+ transition: all 0.3s;
 }
-.sec-5-content-wrap .con-1{
-    background-color: #a0c244;
+.sec-5-content-wrap .content.on {
+ z-index: 1;
+ opacity: 1;
 }
-.sec-5-content-wrap .con-2{
-    background-color: #c24489;
+.sec-5-content-wrap .content p {
+ margin: 30px 0 20px;
 }
-.sec-5-content-wrap .con-3{
-    background-color: #c25d44;
+
+.sec-5-content-wrap .con-0 {
+ background-image: url(../img/bg-4-1.png);
 }
-.sec-5-menu{
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+.sec-5-content-wrap .con-1 {
+ background-image: url(../img/bg-4-2.png);
 }
+.sec-5-content-wrap .con-2 {
+ background-image: url(../img/bg-4-3.png);
+}
+.sec-5-content-wrap .con-3 {
+ background-image: url(../img/bg-4-4.png);
+}
+
+.sec-5-menu {
+ position: absolute;
+ bottom: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: 1;
+ display: flex;
+ gap: 10px;
+ overflow: hidden;
+ border-radius: 30px;
+}
+.sec-5-menu li a {
+ background-color: rgba(255, 255, 255, 0.212);
+ padding: 10px 20px;
+ display: flex;
+ flex-direction: column;
+ transition: all 0.3s;
+ justify-content: center;
+ font-size: 17px;
+ min-width: 150px;
+
+ align-items: center;
+}
+.sec-5-menu li a span:first-child{
+    opacity: .6;
+}
+.sec-5-menu li.active a {
+ background-color: #7044c2;
+ color: #fff;
+}
+.sec-5-menu li span {
+ color: #ffffff;
+}
+
 footer {
  background-color: #f1f1f1;
  padding: 30px 0;
