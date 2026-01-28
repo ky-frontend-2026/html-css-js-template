@@ -73,3 +73,13 @@ sec5MenuList.forEach((menu, index) => {
   init(index);
  });
 });
+ const swiper = new Swiper(".sec-1-slider", {
+  loop:true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
