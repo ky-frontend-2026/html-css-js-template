@@ -83,3 +83,28 @@ sec5MenuList.forEach((menu, index) => {
         prevEl: ".swiper-button-prev",
       },
     });
+
+
+
+    const bgWrap= document.querySelectorAll('.sec-3 .bg-wrap > div ')
+
+bgWrap[0].classList.add('active')
+// active
+
+var sec3slider = new Swiper(".sec-3-slider", {
+  loop:true,
+  navigation: {
+    nextEl: ".sec-3 .next",
+    prevEl: ".sec-3 .prev",
+  },
+  on:{
+    activeIndexChange:function(){
+        const i = this.realIndex
+
+        console.log(`현재 index ${i}`)
+        bgWrap.forEach((bg)=>bg.classList.remove('active'))
+        bgWrap[i].classList.add('active')
+
+    }
+  }
+});
